@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient(rgba(0,0,0,0.5),#0a995e),url(/banner.jpg);
+    background-position: center;
+    background-size: cover;
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.panel-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.panel-container strong {
+  line-height: 20px;
+}
+
+.panel-container p {
+  margin: 25px 0;
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  cursor: pointer;
+  flex: 1;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.rating.active,
+.rating:hover {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating img {
+  width: 40px;
+}
+
+.rating small {
+  color: #555;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.rating.active small,
+.rating:hover small {
+  color: #111;
+}
+
+.btn {
+  background-color: #302d2b;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 30px;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+    </style>
+  </head>
+  <body>
+  
+
+    </div>
+    <div id="panel" class="panel-container">
+      <strong
+        >How satisfied are you with our<br />
+        customer support performance?</strong
+      >
+      <div class="ratings-container">
+        <div class="rating">
+          <img
+            src="https://image.flaticon.com/icons/svg/187/187150.svg"
+            alt=""
+          />
+          <small>Unhappy</small>
+        </div>
+        <div class="rating">
+          <img
+            src="https://image.flaticon.com/icons/svg/187/187136.svg"
+            alt=""
+          />
+          <small>Neutral</small>
+        </div>
+        <div class="rating active">
+          <img
+            src="https://image.flaticon.com/icons/svg/187/187133.svg"
+            alt=""
+          />
+          <small>Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send review</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  
+
+  </div>
+</html>
